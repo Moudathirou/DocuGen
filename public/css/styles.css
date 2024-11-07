@@ -1,0 +1,80 @@
+.gradient-bg {
+    background: linear-gradient(120deg, #2E3192 0%, #1BFFFF 100%);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .code-block {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .dashboard-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #authContainer, #generatorContainer, #dashboardContainer {
+    display: none;
+  }
+  
+  .active {
+    display: block !important;
+  }
+
+
+  /* Styles pour le conteneur de code */
+.code-block {
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/* Effet de scanning */
+@keyframes scanLine {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+}
+
+.scanning::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #1BFFFF;
+  animation: scanLine 2s linear infinite;
+  box-shadow: 0 0 20px #1BFFFF;
+}
