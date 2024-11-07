@@ -2,7 +2,7 @@
 
 DocuGen is a web application that automatically generates documentation for your code using OpenAI's capabilities. Built with Express.js, this project demonstrates the implementation of authentication, API integration, and modern web development practices.
 
-[![DocuGen Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+https://github.com/user-attachments/assets/4103508a-5b5a-414e-8a2f-658739086196
 
 ## Features
 
@@ -36,6 +36,7 @@ git clone https://github.com/Moudathirou/DocuGen.git
 ```bash
 cd DocuGen
 npm install
+```
 
 3.Create a .env file in the root directory and add your configuration:
 ```bash
